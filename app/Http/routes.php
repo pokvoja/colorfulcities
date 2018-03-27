@@ -1,5 +1,10 @@
 <?php
 
+//@sec
+header('Access-Control-Allow-Origin:*');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization");
+
+
 /****************   Model binding into route **************************/
 Route::model('article', 'App\Article');
 Route::model('articlecategory', 'App\ArticleCategory');
@@ -19,6 +24,10 @@ Route::get('articles', 'ArticlesController@index');
 Route::get('article/{slug}', 'ArticlesController@show');
 Route::get('video/{id}', 'VideoController@show');
 Route::get('photo/{id}', 'PhotoController@show');
+
+
+Route::any('api/spot/create', 'ApiController@addSpot');
+Route::any('api/spot/getAll', 'ApiController@getSpots');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
