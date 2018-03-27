@@ -1,4 +1,11 @@
-# Laravel Framework 5.1  Bootstrap 3 Starter Site
+Colorful Cities
+===============
+
+Map your streetart projects.
+Build with Laravel and cordova, based on:
+
+
+## Laravel Framework 5.1  Bootstrap 3 Starter Site
 
 ## Starter Site based on on Laravel 5.1 and Boostrap 3
 * [Features](#feature1)
